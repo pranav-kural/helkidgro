@@ -1,4 +1,10 @@
-# Getting Started with Create React App
+# Helkidgro
+
+Help kids grow.
+
+A platform where people can browse artwork listed by non-profits that work with kids in underprivileged parts of the world, and either donate directly or choose to buy products with the selected design on them, and in this way help support education, healthcare and nutrition for such kids while also fulfilling their need for a consumer product.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

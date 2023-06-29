@@ -25,9 +25,9 @@ function Navigation({ setCurrentPage }) {
         </Navbar.Brand>
         <Nav className="justify-content-end">
           <Nav.Link
-            className="active"
+            // className="active"
             onClick={(e) => setCurrentPage(0)}
-            aria-current="page"
+            // aria-current="page"
           >
             Home
           </Nav.Link>
