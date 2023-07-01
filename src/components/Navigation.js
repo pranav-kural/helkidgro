@@ -4,7 +4,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 function Navigation({ setCurrentPage }) {
   return (
-    <Navbar bg="light" data-bs-theme="light">
+    <Navbar data-bs-theme="light">
       <Container>
         <Navbar.Brand href="#home">
           <span id="nav-logo" className="text-color-primary">
@@ -25,6 +25,7 @@ function Navigation({ setCurrentPage }) {
         </Navbar.Brand>
         <Nav className="justify-content-end">
           <Nav.Link
+            href="#home"
             // className="active"
             onClick={(e) => setCurrentPage(0)}
             // aria-current="page"
