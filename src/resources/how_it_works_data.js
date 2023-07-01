@@ -1,6 +1,6 @@
 // Textual Data for How it Works component
 const how_it_works_data = {
-  how_it_works_en: {
+  en: {
     title: "How it works?",
     section_heading_first:
       "Non-profit organizations working with kids in underprivileged and often neglected parts of the world list artwork created by children on the Helkidgro platform.",
@@ -10,7 +10,7 @@ const how_it_works_data = {
       "If you find an artwork you like, you could support the kid by either donating, or by ordering an item of your choice (mug, t-shirt and more) using that artwork. All proceeds from sale goes to the non-profit which will than utilize the funds on grassroots level.",
   },
   // above in french language
-  how_it_works_fr: {
+  fr: {
     title: "Comment ça marche?",
     section_heading_first:
       "Les organisations à but non lucratif travaillant avec des enfants dans des régions défavorisées et souvent négligées du monde entier répertorient les œuvres d'art créées par des enfants sur la plate-forme Helkidgro.",
