@@ -1,18 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import "./index.css";
-import App from "./App";
+import "./styles/styles.css";
 import reportWebVitals from "./reportWebVitals";
 
-// Importing the Bootstrap CSS
 import "bootstrap/dist/css/bootstrap.min.css";
 import ErrorPage from "./error-page";
+import Navigation from "./components/Navigation";
+import HomePage from "./routes/Home";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello world!</div>,
+    element: <HomePage />,
     errorElement: <ErrorPage />,
   },
 ]);
@@ -20,6 +20,7 @@ const router = createBrowserRouter([
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <Navigation />
     <RouterProvider router={router} />
   </React.StrictMode>
 );

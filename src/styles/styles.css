@@ -1,3 +1,17 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
 .text-color-primary {
   color: #a23c33;
 }
@@ -31,41 +45,6 @@ a.nav-link {
 
 a.nav-link.active {
   color: #a23c33 !important;
-}
-
-#home-art-is-the-way-slogan {
-  font-size: 4rem;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-
-  background: linear-gradient(160deg, #f1311f 10%, #1f1d90 80%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-}
-
-.home-landing-description {
-  font-size: 1.5rem;
-  font-family: Nunito, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.home-link {
-  font-size: 1.25rem;
-  font-family: Nunito, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  text-decoration: underline;
-}
-
-.home-link:hover {
-  color: #a23c33;
-  cursor: pointer;
 }
 
 #error-page {

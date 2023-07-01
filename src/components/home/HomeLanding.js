@@ -1,4 +1,4 @@
-function Home({ setCurrentPage, setSubPage }) {
+export default function HomeLanding({ setCurrentPage, setSubPage }) {
   return (
     <div className="container">
       <div className="row">
@@ -43,5 +43,3 @@ function Home({ setCurrentPage, setSubPage }) {
     </div>
   );
 }
-
-export default Home;
