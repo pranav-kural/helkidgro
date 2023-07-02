@@ -1,10 +1,6 @@
-import { useContext } from "react";
-import { LanguageContext } from "../../app/LanguageContext";
 import home_landing_data from "../../resources/home_landing_data";
 
-export default function HomeLanding({ setCurrentPage, setSubPage }) {
-  const lang = useContext(LanguageContext);
-
+export default function HomeLanding({ lang }) {
   return (
     <div className="container">
       <div className="row">
@@ -23,22 +19,13 @@ export default function HomeLanding({ setCurrentPage, setSubPage }) {
               {home_landing_data[lang].description_line_2}
             </p>
             <div className="d-flex justify-content-between align-items-center">
-              <span
-                className="home-link"
-                onClick={(e) => setCurrentPage(1) && setSubPage(0)}
-              >
+              <span className="home-link">
                 {home_landing_data[lang].artwork}
               </span>
-              <span
-                className="home-link"
-                onClick={(e) => setCurrentPage(1) && setSubPage(1)}
-              >
+              <span className="home-link">
                 {home_landing_data[lang].non_profits}
               </span>
-              <span
-                className="home-link"
-                onClick={(e) => setCurrentPage(1) && setSubPage(2)}
-              >
+              <span className="home-link">
                 {home_landing_data[lang].stories_of_kids}
               </span>
             </div>

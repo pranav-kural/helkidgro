@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-size: 1.15rem !important;
 }
 
 code {
@@ -16,35 +17,31 @@ code {
   color: #a23c33;
 }
 
-#nav-logo {
-  color: #a23c33;
-  font-size: 2rem;
+.text-color-white {
+  color: #ffffff;
+}
+
+.text-style-nunito {
   font-family: Nunito, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
 
-#nav-logo-slogan {
-  color: #2c2c2c;
-  font-size: 1rem;
-  font-family: Nunito, "Open Sans", "Helvetica Neue", sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-right: 1.5rem;
-  padding-left: 0.15rem;
-}
-a.nav-link {
-  font-family: Nunito, "Open Sans", "Helvetica Neue", sans-serif;
-  padding-right: 2em !important;
+.bg-color-primary {
+  background-color: #cf5f55;
 }
 
-a.nav-link.active {
-  color: #a23c33 !important;
+.bg-color-secondary {
+  background: rgba(162, 60, 51, 0.5);
+}
+
+.text-underline-on-hover:hover {
+  text-decoration: underline;
+}
+
+.text-cursor-pointer-on-hover:hover {
+  cursor: pointer;
 }
 
 #error-page {

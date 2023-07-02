@@ -1,0 +1,51 @@
+#nav-logo {
+  color: #a23c33;
+  font-size: 2rem;
+  font-family: Nunito, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+#nav-logo-slogan {
+  color: #2c2c2c;
+  font-size: 1rem;
+  font-family: Nunito, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 1.5rem;
+  padding-left: 0.15rem;
+}
+a.nav-link {
+  font-family: Nunito, "Open Sans", "Helvetica Neue", sans-serif;
+  padding-right: 2em !important;
+}
+
+a.nav-link.active {
+  color: #a23c33 !important;
+}
+
+#nav-language-selector {
+  position: absolute;
+  top: 2;
+  right: 0;
+  margin-right: 1rem;
+  color: rgba(0, 0, 0, 0.65);
+  min-width: 100px;
+  border-color: #2c2c2c;
+  border-radius: 24px;
+  border: 1px solid #d9d9d9;
+}
+
+#nav-language-selector span.active {
+  color: #a23c33;
+}
+
+#nav-language-selector span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

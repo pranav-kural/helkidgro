@@ -1,8 +1,12 @@
+import navigation_data from "../resources/navigation_data";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
+import { NavDropdown } from "react-bootstrap";
 
-function Navigation({ setCurrentPage }) {
+import "../styles/navigation.css";
+
+function Navigation({ lang, setLang }) {
   return (
     <Navbar data-bs-theme="light">
       <Container>
@@ -27,22 +31,43 @@ function Navigation({ setCurrentPage }) {
           <Nav.Link
             href="#home"
             // className="active"
-            onClick={(e) => setCurrentPage(0)}
             // aria-current="page"
           >
-            Home
+            {navigation_data[lang].home}
           </Nav.Link>
-          <Nav.Link href="#explore" onClick={(e) => setCurrentPage(1)}>
-            Explore
-          </Nav.Link>
-          <Nav.Link href="#about" onClick={(e) => setCurrentPage(2)}>
-            About
-          </Nav.Link>
-          <Nav.Link href="#contact" onClick={(e) => setCurrentPage(3)}>
-            Contact
-          </Nav.Link>
+          <NavDropdown title={navigation_data[lang].explore}>
+            <NavDropdown.Item href="#artwork">
+              {navigation_data[lang].artwork}
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#n">
+              {navigation_data[lang].non_profits}
+            </NavDropdown.Item>
+            <NavDropdown.Item href="#s">
+              {navigation_data[lang].stories_of_kids}
+            </NavDropdown.Item>
+          </NavDropdown>
+          <Nav.Link href="#about">{navigation_data[lang].about}</Nav.Link>
+          <Nav.Link href="#contact">{navigation_data[lang].contact}</Nav.Link>
         </Nav>
       </Container>
+      <div
+        id="nav-language-selector"
+        className="d-flex align-items-center justify-content-center"
+      >
+        <span
+          className={`mx-2 ${lang === "en" ? "active" : ""}`}
+          onClick={(e) => setLang("en")}
+        >
+          en
+        </span>
+        <div className="vr"></div>
+        <span
+          className={`mx-2 ${lang === "fr" ? "active" : ""}`}
+          onClick={(e) => setLang("fr")}
+        >
+          fr
+        </span>
+      </div>
     </Navbar>
   );
 }
