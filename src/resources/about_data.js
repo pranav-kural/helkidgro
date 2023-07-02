@@ -1,7 +1,9 @@
-// Textual Data for How it Works component
-const how_it_works_data = {
+// Textual Data for About component
+const about_data = {
   en: {
-    title: "How it works?",
+    title: "Who are we?",
+    subtitle:
+      "We are on a mission to connect those with resources to those kids who require resources",
     section_first_heading:
       "Non-profit organizations working with kids in underprivileged and often neglected parts of the world list artwork created by children on the Helkidgro platform.",
     section_second_heading:
@@ -11,7 +13,9 @@ const how_it_works_data = {
   },
   // above in french language
   fr: {
-    title: "Comment ça marche?",
+    title: "Qui sommes-nous?",
+    subtitle:
+      "Nous avons pour mission de connecter ceux qui ont des ressources à ces enfants qui ont besoin de ressources",
     section_first_heading:
       "Les organisations à but non lucratif travaillant avec des enfants dans des régions défavorisées et souvent négligées du monde entier répertorient les œuvres d'art créées par des enfants sur la plate-forme Helkidgro.",
     section_second_heading:
@@ -21,4 +25,4 @@ const how_it_works_data = {
   },
 };
 
-export default how_it_works_data;
+export default about_data;

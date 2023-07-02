@@ -5,8 +5,11 @@ import Navbar from "react-bootstrap/Navbar";
 import { NavDropdown } from "react-bootstrap";
 
 import "../styles/navigation.css";
+import { Link, useLocation } from "react-router-dom";
 
-function Navigation({ lang, setLang }) {
+function Navigation({ lang, setLang, currentPage, setCurrentPage }) {
+  const location = useLocation();
+
   return (
     <Navbar data-bs-theme="light">
       <Container>
@@ -28,26 +31,64 @@ function Navigation({ lang, setLang }) {
           </span>
         </Navbar.Brand>
         <Nav className="justify-content-end">
-          <Nav.Link
-            href="#home"
-            // className="active"
-            // aria-current="page"
+          <Link
+            to="/"
+            className={`nav-link ${currentPage === "home" ? "active" : ""}`}
+            onClick={(e) => setCurrentPage("home")}
           >
             {navigation_data[lang].home}
-          </Nav.Link>
-          <NavDropdown title={navigation_data[lang].explore}>
-            <NavDropdown.Item href="#artwork">
+          </Link>
+          <Link
+            to="explore"
+            id="nav-explore-link"
+            className={`nav-link ${currentPage === "explore" ? "active" : ""}`}
+            onClick={(e) => setCurrentPage("explore")}
+          >
+            {navigation_data[lang].explore}
+          </Link>
+          <NavDropdown title="">
+            <Link
+              to="explore/artwork"
+              className={`dropdown-item ${
+                currentPage === "explore" ? "active" : ""
+              }`}
+              onClick={(e) => setCurrentPage("explore")}
+            >
               {navigation_data[lang].artwork}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#n">
+            </Link>
+            <Link
+              to="explore/non-profits"
+              className={`dropdown-item ${
+                currentPage === "explore" ? "active" : ""
+              }`}
+              onClick={(e) => setCurrentPage("explore")}
+            >
               {navigation_data[lang].non_profits}
-            </NavDropdown.Item>
-            <NavDropdown.Item href="#s">
+            </Link>
+            <Link
+              to="explore/stories-of-kids"
+              className={`dropdown-item ${
+                currentPage === "explore" ? "active" : ""
+              }`}
+              onClick={(e) => setCurrentPage("explore")}
+            >
               {navigation_data[lang].stories_of_kids}
-            </NavDropdown.Item>
+            </Link>
           </NavDropdown>
-          <Nav.Link href="#about">{navigation_data[lang].about}</Nav.Link>
-          <Nav.Link href="#contact">{navigation_data[lang].contact}</Nav.Link>
+          <Link
+            to="about"
+            className={`nav-link ${currentPage === "about" ? "active" : ""}`}
+            onClick={(e) => setCurrentPage("about")}
+          >
+            {navigation_data[lang].about}
+          </Link>
+          <Link
+            to="contact"
+            className={`nav-link ${currentPage === "contact" ? "active" : ""}`}
+            onClick={(e) => setCurrentPage("contact")}
+          >
+            {navigation_data[lang].contact}
+          </Link>
         </Nav>
       </Container>
       <div

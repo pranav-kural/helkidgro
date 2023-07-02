@@ -1,0 +1,27 @@
+.artwork-card-footer-link {
+  color: #a23c33;
+  text-decoration: none;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  text-align: left;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.artwork-card-image {
+  height: 40%;
+  object-fit: cover;
+}
+
+.artwork-card .card-body {
+  padding-bottom: 1px !important;
+  padding-top: 1px !important;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}

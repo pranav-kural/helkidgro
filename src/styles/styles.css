@@ -1,8 +1,7 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: Nunito, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", sans-serif !important;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.15rem !important;
@@ -14,11 +13,11 @@ code {
 }
 
 .text-color-primary {
-  color: #a23c33;
+  color: #a23c33 !important;
 }
 
 .text-color-white {
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .text-style-nunito {
@@ -28,12 +27,30 @@ code {
   line-height: normal;
 }
 
+.text-style-raleway {
+  font-family: Raleway, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.text-style-aclonica {
+  font-family: Aclonica, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
 .bg-color-primary {
-  background-color: #cf5f55;
+  background-color: #cf5f55 !important;
 }
 
 .bg-color-secondary {
-  background: rgba(162, 60, 51, 0.5);
+  background: rgba(162, 60, 51, 0.5) !important;
+}
+
+.bg-color-white {
+  background-color: #ffffff !important;
 }
 
 .text-underline-on-hover:hover {
@@ -52,4 +69,15 @@ code {
   width: 100%;
   height: 80vh;
   font-family: Nunito, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+/* Overwrite Bootstrap styles */
+.dropdown-item.active {
+  color: #2c2c2c !important;
+  background-color: #ffffff !important;
+}
+
+dropdown-item:focus,
+.dropdown-item:hover {
+  background-color: #eeeeef !important;
 }

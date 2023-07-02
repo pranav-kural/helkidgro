@@ -1,54 +1,22 @@
 import how_it_works_data from "../../resources/how_it_works_data";
+import InformationImageSection from "../utility/InformationImageSection";
 
 export default function HowItWorks({ lang }) {
+  const data = {
+    section_first_heading: how_it_works_data[lang].section_first_heading,
+    section_first_image: "./assets/image_sample.png",
+    section_second_heading: how_it_works_data[lang].section_second_heading,
+    section_second_image: "./assets/image_sample.png",
+    section_third_heading: how_it_works_data[lang].section_third_heading,
+    section_third_image: "./assets/image_sample.png",
+  };
+
   return (
     <div className="container my-5">
-      <h1 className="text-center border-bottom text-color-primary text-style-nunito">
+      <h1 className="text-center border-bottom text-color-primary text-style-nunito pt-3">
         {how_it_works_data[lang].title}
       </h1>
-      <div className="d-flex flex-column mt-4 px-sm-0 px-lg-5">
-        <div className="row mb-5 align-items-center px-xl-5 px-xxl-5">
-          <div className="col-sm-12 col-md-8">
-            <p>{how_it_works_data[lang].section_heading_first}</p>
-          </div>
-          <div className="col-sm-12 col-md-4">
-            <img
-              src="./assets/image_sample.png"
-              width={220}
-              height={150}
-              alt="config"
-            />
-          </div>
-        </div>
-
-        <div className="row mb-5 align-items-center px-xl-5 px-xxl-5">
-          <div className="col-sm-12 col-md-4">
-            <img
-              src="./assets/image_sample.png"
-              width={220}
-              height={150}
-              alt="config"
-            />
-          </div>
-          <div className="col-sm-12 col-md-8">
-            <p>{how_it_works_data[lang].section_heading_second}</p>
-          </div>
-        </div>
-
-        <div className="row align-items-center px-xl-5 px-xxl-5">
-          <div className="col-sm-12 col-md-8">
-            <p>{how_it_works_data[lang].section_heading_third}</p>
-          </div>
-          <div className="col-sm-12 col-md-4">
-            <img
-              src="./assets/image_sample.png"
-              width={220}
-              height={150}
-              alt="config"
-            />
-          </div>
-        </div>
-      </div>
+      <InformationImageSection data={data} />
     </div>
   );
 }

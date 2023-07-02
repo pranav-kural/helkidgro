@@ -1,27 +1,27 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import ErrorPage from "./error-page";
 import Navigation from "./components/Navigation";
-import HomePage from "./routes/Home";
 import Footer from "./components/Footer";
 import { LanguageContext } from "./app/LanguageContext";
 import { useState } from "react";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <HomePage />,
-    errorElement: <ErrorPage />,
-  },
-]);
+import { Outlet } from "react-router-dom";
+import { CurrentPageContextProvider } from "./app/CurrentPageContext";
 
 function App() {
   const [lang, setLang] = useState("en");
+  const [currentPage, setCurrentPage] = useState("home");
+
   return (
-    <LanguageContext.Provider value={lang}>
-      <Navigation lang={lang} setLang={setLang} />
-      <RouterProvider router={router} />
-      <Footer lang={lang} />
-    </LanguageContext.Provider>
+    <CurrentPageContextProvider value={currentPage}>
+      <LanguageContext.Provider value={lang}>
+        <Navigation
+          lang={lang}
+          setLang={setLang}
+          currentPage={currentPage}
+          setCurrentPage={setCurrentPage}
+        />
+        <Outlet />
+        <Footer lang={lang} />
+      </LanguageContext.Provider>
+    </CurrentPageContextProvider>
   );
 }
 

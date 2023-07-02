@@ -4,11 +4,61 @@ import "./styles/styles.css";
 import reportWebVitals from "./reportWebVitals";
 import "bootstrap/dist/css/bootstrap.min.css";
 import App from "./App";
+import HomePage from "./routes/Home";
+import About from "./routes/About";
+import Explore from "./routes/Explore";
+import ExploreRouteHandler from "./routes/ExploreRouteHandler";
+import ErrorPage from "./error-page";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import Artwork from "./routes/Artwork";
+import NonProfits from "./routes/NonProfits";
+import StoriesOfKids from "./routes/StoriesOfKids";
+import Contact from "./routes/Contact";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+    errorElement: <ErrorPage />,
+    children: [
+      { path: "/", element: <HomePage /> },
+      {
+        path: "explore",
+        element: <ExploreRouteHandler />,
+        children: [
+          { path: "", element: <Explore /> },
+          {
+            path: "artwork",
+            element: <Artwork />,
+            children: [
+              { path: "artist/:artist_id", element: "Artist" },
+              { path: "art/:art_id", element: "Art" },
+            ],
+          },
+          {
+            path: "non-profits",
+            element: <NonProfits />,
+            children: [
+              { path: "non-profit/:non_profit_id", element: "Non-profit" },
+            ],
+          },
+          {
+            path: "stories-of-kids",
+            element: <StoriesOfKids />,
+            children: [{ path: "kid/:kid_id", element: "Story" }],
+          },
+        ],
+      },
+      { path: "about", element: <About /> },
+      { path: "contact", element: <Contact /> },
+    ],
+  },
+]);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>
 );
 
