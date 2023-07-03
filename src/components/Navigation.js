@@ -7,13 +7,14 @@ import { NavDropdown } from "react-bootstrap";
 import "../styles/navigation.css";
 import { Link, useLocation } from "react-router-dom";
 
-function Navigation({ lang, setLang, currentPage, setCurrentPage }) {
+function Navigation({ lang, setLang }) {
   const location = useLocation();
+  const currentPage = location.pathname.split("/")[1];
 
   return (
     <Navbar data-bs-theme="light">
       <Container>
-        <Navbar.Brand href="#home">
+        <Link to="/" className="navbar-brand">
           <span id="nav-logo" className="text-color-primary">
             Helkidgro
           </span>
@@ -29,12 +30,11 @@ function Navigation({ lang, setLang, currentPage, setCurrentPage }) {
               <span className="text-color-primary">gro</span>w
             </span>
           </span>
-        </Navbar.Brand>
+        </Link>
         <Nav className="justify-content-end">
           <Link
             to="/"
-            className={`nav-link ${currentPage === "home" ? "active" : ""}`}
-            onClick={(e) => setCurrentPage("home")}
+            className={`nav-link ${currentPage === "" ? "active" : ""}`}
           >
             {navigation_data[lang].home}
           </Link>
@@ -42,7 +42,6 @@ function Navigation({ lang, setLang, currentPage, setCurrentPage }) {
             to="explore"
             id="nav-explore-link"
             className={`nav-link ${currentPage === "explore" ? "active" : ""}`}
-            onClick={(e) => setCurrentPage("explore")}
           >
             {navigation_data[lang].explore}
           </Link>
@@ -52,7 +51,6 @@ function Navigation({ lang, setLang, currentPage, setCurrentPage }) {
               className={`dropdown-item ${
                 currentPage === "explore" ? "active" : ""
               }`}
-              onClick={(e) => setCurrentPage("explore")}
             >
               {navigation_data[lang].artwork}
             </Link>
@@ -61,7 +59,6 @@ function Navigation({ lang, setLang, currentPage, setCurrentPage }) {
               className={`dropdown-item ${
                 currentPage === "explore" ? "active" : ""
               }`}
-              onClick={(e) => setCurrentPage("explore")}
             >
               {navigation_data[lang].non_profits}
             </Link>
@@ -70,7 +67,6 @@ function Navigation({ lang, setLang, currentPage, setCurrentPage }) {
               className={`dropdown-item ${
                 currentPage === "explore" ? "active" : ""
               }`}
-              onClick={(e) => setCurrentPage("explore")}
             >
               {navigation_data[lang].stories_of_kids}
             </Link>
@@ -78,14 +74,12 @@ function Navigation({ lang, setLang, currentPage, setCurrentPage }) {
           <Link
             to="about"
             className={`nav-link ${currentPage === "about" ? "active" : ""}`}
-            onClick={(e) => setCurrentPage("about")}
           >
             {navigation_data[lang].about}
           </Link>
           <Link
             to="contact"
             className={`nav-link ${currentPage === "contact" ? "active" : ""}`}
-            onClick={(e) => setCurrentPage("contact")}
           >
             {navigation_data[lang].contact}
           </Link>

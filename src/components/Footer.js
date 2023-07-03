@@ -8,7 +8,7 @@ import {
 
 export default function Footer({ lang }) {
   return (
-    <div className="d-flex flex-column mt-5 bg-color-primary">
+    <div id="footer" className="d-flex flex-column mt-5 bg-color-primary">
       <div
         id="footer-icons-container"
         className="bg-color-secondary text-center d-flex justify-content-evenly align-items-center py-2 fs-4"

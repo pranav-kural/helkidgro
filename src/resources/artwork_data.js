@@ -33,6 +33,13 @@ const artwork_data = {
         artwork_artist_id: 2,
       },
     ],
+    category_selection_heading: "Select a category",
+    category_painting: "Painting",
+    category_drawing: "Drawing",
+    category_abstract: "Abstract",
+    category_photography: "Photography",
+    category_contemporary: "Contemporary",
+    category_other: "Other",
   },
   // above in french
   fr: {
@@ -68,6 +75,13 @@ const artwork_data = {
         artwork_artist_id: 2,
       },
     ],
+    category_selection_heading: "Sélectionnez une catégorie",
+    category_painting: "Peinture",
+    category_drawing: "Dessin",
+    category_abstract: "Abstrait",
+    category_photography: "Photographie",
+    category_contemporary: "Contemporain",
+    category_other: "Autre",
   },
 };
 

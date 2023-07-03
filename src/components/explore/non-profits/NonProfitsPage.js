@@ -1,5 +1,5 @@
-import non_profits_data from "../../resources/non_profits_data";
-import SleekPageHeader from "../utility/SleekPageHeader";
+import non_profits_data from "../../../resources/non_profits_data";
+import SleekPageHeader from "../../utility/SleekPageHeader";
 import NonProfitCards from "./NonProfitCards";
 
 export default function NonProfitsPage({ lang }) {

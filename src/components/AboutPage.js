@@ -1,6 +1,7 @@
 import about_data from "../resources/about_data";
 import InformationImageSection from "./utility/InformationImageSection";
 import "../styles/about.css";
+import SleekPageHeader from "./utility/SleekPageHeader";
 
 export default function AboutPage({ lang }) {
   const data = {
@@ -14,10 +15,10 @@ export default function AboutPage({ lang }) {
 
   return (
     <div className="container my-5">
-      <div className="d-flex flex-column justify-content-center align-items-center mb-5 border-bottom">
-        <h1 id="about-who-are-we-slogan">{about_data[lang].title}</h1>
-        <p className="text-style-nunito">{about_data[lang].subtitle}</p>
-      </div>
+      <SleekPageHeader
+        title={about_data[lang].title}
+        subtitle={about_data[lang].subtitle}
+      />
       <InformationImageSection data={data} />
     </div>
   );

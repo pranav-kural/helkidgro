@@ -1,5 +1,5 @@
-import stories_of_kids_data from "../../resources/stories_of_kids_data";
-import SleekPageHeader from "../utility/SleekPageHeader";
+import stories_of_kids_data from "../../../resources/stories_of_kids_data";
+import SleekPageHeader from "../../utility/SleekPageHeader";
 import StoriesOfKidsCards from "./StoriesOfKidsCards";
 
 export default function StoriesOfKidsPage({ lang }) {

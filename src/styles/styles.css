@@ -5,6 +5,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 1.15rem !important;
+  min-height: 100vh !important;
 }
 
 code {
@@ -12,7 +13,15 @@ code {
     monospace;
 }
 
+#root {
+  min-height: 100vh;
+}
+
 .text-color-primary {
+  color: #a23c33 !important;
+}
+
+.text-color-primary-on-hover:hover {
   color: #a23c33 !important;
 }
 
@@ -45,6 +54,10 @@ code {
   background-color: #cf5f55 !important;
 }
 
+.bg-color-primary-on-hover:hover {
+  background-color: #a23c33 !important;
+}
+
 .bg-color-secondary {
   background: rgba(162, 60, 51, 0.5) !important;
 }
@@ -59,6 +72,19 @@ code {
 
 .text-cursor-pointer-on-hover:hover {
   cursor: pointer;
+}
+
+.sleek-header-slogan {
+  font-size: 3.5rem;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+  background: linear-gradient(150deg, #f1311f 10%, #1f1d90 80%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 #error-page {
