@@ -9,7 +9,10 @@ export default function NonProfitCards({ non_profits_data }) {
       data[i] = {
         title: non_profits_data[i].name,
         description: non_profits_data[i].description,
-        secondary_text: "",
+        secondary_text:
+          non_profits_data[i].donations_received_title +
+          " " +
+          non_profits_data[i].donations_received,
         image_src: non_profits_data[i].image,
         image_alt: non_profits_data[i].name,
         more_info_text: non_profits_data[i].link,
@@ -17,6 +20,7 @@ export default function NonProfitCards({ non_profits_data }) {
         card_styles: "h-100 text-center info-card",
         card_image_styles: "info-card-image mb-3",
         card_title_styles: "text-style-raleway text-color-primary mb-5",
+        card_description_styles: "text-style-raleway mb-3",
         card_footer_styles: "bg-color-white text-center mt-4",
         card_more_info_link_styles:
           "info-card-footer-link text-decoration-underline",
