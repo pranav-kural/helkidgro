@@ -14,6 +14,8 @@ import Artwork from "./routes/Artwork";
 import NonProfits from "./routes/NonProfits";
 import StoriesOfKids from "./routes/StoriesOfKids";
 import Contact from "./routes/Contact";
+import ArtworkRouteHandler from "./routes/ArtworkRouteHandler";
+import ArtworkDisplay from "./routes/ArtworkDisplay";
 
 const router = createBrowserRouter([
   {
@@ -29,10 +31,10 @@ const router = createBrowserRouter([
           { path: "", element: <Explore /> },
           {
             path: "artwork",
-            element: <Artwork />,
+            element: <ArtworkRouteHandler />,
             children: [
-              { path: "artist/:artist_id", element: "Artist" },
-              { path: "art/:art_id", element: "Art" },
+              { path: "", element: <Artwork /> },
+              { path: "art/:art_id", element: <ArtworkDisplay /> },
             ],
           },
           {

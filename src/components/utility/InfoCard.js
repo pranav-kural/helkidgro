@@ -1,9 +1,10 @@
 import { Card, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 
 export default function InfoCard({ data }) {
   console.log("InfoCard", data);
   return (
-    <Col>
+    <Link to={data.card_link} className="col card-wrapper-link">
       <Card className={data.card_styles}>
         <Card.Img
           variant="top"
@@ -35,6 +36,6 @@ export default function InfoCard({ data }) {
           </Card.Link>
         </Card.Footer>
       </Card>
-    </Col>
+    </Link>
   );
 }

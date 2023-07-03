@@ -1,6 +1,8 @@
 import { Row } from "react-bootstrap";
 import InfoCard from "../utility/InfoCard";
 import "../../styles/info-card-primary.css";
+import "../../styles/artwork.css";
+import { Link } from "react-router-dom";
 
 export default function ArtworkCards({ artwork_data }) {
   function getData() {
@@ -22,6 +24,7 @@ export default function ArtworkCards({ artwork_data }) {
         card_footer_styles: "bg-color-white text-center",
         card_more_info_link_styles:
           "info-card-footer-link text-decoration-underline",
+        card_link: "/explore/artwork/art/1",
       };
     }
     return data;

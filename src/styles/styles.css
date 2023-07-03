@@ -97,6 +97,11 @@ code {
   font-family: Nunito, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+.card-wrapper-link {
+  text-decoration: none !important;
+  color: none;
+}
+
 /* Overwrite Bootstrap styles */
 .dropdown-item.active {
   color: #2c2c2c !important;
