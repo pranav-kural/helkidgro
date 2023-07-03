@@ -2,7 +2,6 @@ import { Row } from "react-bootstrap";
 import InfoCard from "../utility/InfoCard";
 import "../../styles/info-card-primary.css";
 import "../../styles/artwork.css";
-import { Link } from "react-router-dom";
 
 export default function ArtworkCards({ artwork_data }) {
   function getData() {
