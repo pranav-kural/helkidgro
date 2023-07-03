@@ -2,12 +2,35 @@
 
 Help kids grow.
 
-A platform where people can browse artwork listed by non-profits that work with kids in underprivileged parts of the world, and either donate directly or choose to buy products with the selected design on them, and in this way help support education, healthcare and nutrition for such kids while also fulfilling their need for a consumer product.
+A platform where people can browse artwork created by kids and listed by non-profits that work with these kids in underprivileged parts of the world.
+
+Helkidgro will also allow those with resources to either donate directly or choose to buy products with the selected design on them, and in this way help support education, healthcare and nutrition for such kids while also fulfilling their need for a consumer product.
 
 ## Screenshot
 
-![home_page_sample](https://github.com/pranav-kural/helkidgro/assets/17651852/05d1586b-3360-4f00-b59e-432c9047e2f8)
+![home page sreenshot](https://github.com/pranav-kural/helkidgro/assets/17651852/05d1586b-3360-4f00-b59e-432c9047e2f8)
 
+## Architecture
+
+This prototype primarily uses React, React Router, Bootstrap (& React Bootstrap), and React's Context API.
+
+### Language Support
+
+Two languages are supported throughout the website: English and French.
+
+Most of the data being used in the app is stored in `src/resources` folder, which acts like a database for this static prototype. Language selection is then enabled using React's Context API.
+
+### Routing
+
+The app uses React Router for routing. The routes are defined in `src/index.js`, route handlers in `src/routes`, and the components are defined in `src/components` folder.
+
+Such components which are used across multiple routes are defined in `src/components/utility` folder.
+
+### Styling
+
+The app uses Bootstrap for styling. The custom styles are defined in `src/styles` folder.
+
+This project was bootstrapped with `create-react-app`.
 
 ## Getting Started with Create React App
 
