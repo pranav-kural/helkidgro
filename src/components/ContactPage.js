@@ -1,4 +1,4 @@
-import { Form, InputGroup } from "react-bootstrap";
+import { Form } from "react-bootstrap";
 import contact_data from "../resources/contact_data";
 import SleekPageHeader from "./utility/SleekPageHeader";
 import { useState } from "react";
