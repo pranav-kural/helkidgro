@@ -29,6 +29,10 @@ code {
   color: #ffffff !important;
 }
 
+.text-color-light {
+  color: #a7a7a7 !important;
+}
+
 .text-style-nunito {
   font-family: Nunito, "Open Sans", "Helvetica Neue", sans-serif;
   font-style: normal;

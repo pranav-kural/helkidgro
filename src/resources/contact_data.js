@@ -12,6 +12,7 @@ const contact_data = {
       message: "Message",
       message_placeholder: "Enter your message",
       submit: "Submit",
+      reset: "Reset",
     },
   },
   fr: {
@@ -26,6 +27,7 @@ const contact_data = {
       message: "Message",
       message_placeholder: "Entrez votre message",
       submit: "Soumettre",
+      reset: "Réinitialiser",
     },
   },
 };
