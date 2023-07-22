@@ -13,10 +13,10 @@ function Navigation({ lang, setLang }) {
 
   return (
     <div className="container">
-      <Navbar data-bs-theme="light">
-        <Container>
-          <Link to="/" className="navbar-brand">
-            <span id="nav-logo" className="text-color-primary">
+      <Navbar role="navigation" data-bs-theme="light">
+        <Container role="menuitem">
+          <Link role="link" to="/" className="navbar-brand">
+            <span role="banner" id="nav-logo" className="text-color-primary">
               Helkidgro
             </span>
             <br />
@@ -32,14 +32,16 @@ function Navigation({ lang, setLang }) {
               </span>
             </span>
           </Link>
-          <Nav className="justify-content-end">
+          <Nav role="navigation" className="justify-content-end">
             <Link
+              role="link"
               to="/"
               className={`nav-link ${currentPage === "" ? "active" : ""}`}
             >
               {navigation_data[lang].home}
             </Link>
             <Link
+              role="link"
               to="explore"
               id="nav-explore-link"
               className={`nav-link ${
@@ -50,6 +52,7 @@ function Navigation({ lang, setLang }) {
             </Link>
             <NavDropdown title="">
               <Link
+                role="link"
                 to="explore/artwork"
                 className={`dropdown-item ${
                   currentPage === "explore" ? "active" : ""
@@ -58,6 +61,7 @@ function Navigation({ lang, setLang }) {
                 {navigation_data[lang].artwork}
               </Link>
               <Link
+                role="link"
                 to="explore/non-profits"
                 className={`dropdown-item ${
                   currentPage === "explore" ? "active" : ""
@@ -66,6 +70,7 @@ function Navigation({ lang, setLang }) {
                 {navigation_data[lang].non_profits}
               </Link>
               <Link
+                role="link"
                 to="explore/stories-of-kids"
                 className={`dropdown-item ${
                   currentPage === "explore" ? "active" : ""
@@ -75,12 +80,14 @@ function Navigation({ lang, setLang }) {
               </Link>
             </NavDropdown>
             <Link
+              role="link"
               to="about"
               className={`nav-link ${currentPage === "about" ? "active" : ""}`}
             >
               {navigation_data[lang].about}
             </Link>
             <Link
+              role="link"
               to="contact"
               className={`nav-link ${
                 currentPage === "contact" ? "active" : ""
@@ -93,15 +100,18 @@ function Navigation({ lang, setLang }) {
         <div
           id="nav-language-selector"
           className="d-flex align-items-center justify-content-center"
+          role="menu"
         >
           <span
+            role="menuitem"
             className={`mx-2 ${lang === "en" ? "active" : ""}`}
             onClick={(e) => setLang("en")}
           >
             en
           </span>
-          <div className="vr"></div>
+          <div className="vr" role="separator"></div>
           <span
+            role="menuitem"
             className={`mx-2 ${lang === "fr" ? "active" : ""}`}
             onClick={(e) => setLang("fr")}
           >

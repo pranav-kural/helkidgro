@@ -2,7 +2,6 @@ import { Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
 export default function InfoCard({ data }) {
-  console.log("InfoCard", data);
   return (
     <Link to={data.card_link} className="col card-wrapper-link">
       <Card className={data.card_styles}>
