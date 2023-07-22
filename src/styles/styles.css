@@ -15,6 +15,9 @@ code {
 
 #root {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .text-color-primary {
@@ -103,6 +106,8 @@ code {
 
 .card-wrapper-link {
   text-decoration: none !important;
+  padding-right: 1em !important;
+  padding-left: 1em !important;
   color: none;
 }
 

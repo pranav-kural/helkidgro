@@ -23,7 +23,7 @@ export default function ArtworkCards({ artwork_data }) {
         card_footer_styles: "bg-color-white text-center",
         card_more_info_link_styles:
           "info-card-footer-link text-decoration-underline",
-        card_link: "/explore/artwork/art/1",
+        card_link: "/explore/artwork/art/" + artwork_data[i].artwork_art_id,
       };
     }
     return data;
