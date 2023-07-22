@@ -1,3 +1,18 @@
 .search-artwork-input {
   width: 100%;
 }
+.artist-link {
+  font-size: 1.4rem;
+  font-family: Nunito, "Open Sans", "Helvetica Neue", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-decoration: none;
+  color: #a23c33;
+}
+
+.artist-link:hover {
+  color: #a23c33;
+  font-weight: 800;
+  cursor: pointer;
+}
