@@ -57,6 +57,10 @@ code {
   line-height: normal;
 }
 
+.text-size-small {
+  font-size: 0.8rem !important;
+}
+
 .bg-color-primary {
   background-color: #cf5f55 !important;
 }

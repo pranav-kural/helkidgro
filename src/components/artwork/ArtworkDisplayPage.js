@@ -73,9 +73,15 @@ export default function ArtworkDisplayPage({ artwork_id_prop, lang }) {
                 {artwork_display_data[lang].go_back}
               </Link>
             </div>
-            <span className="text-muted">
+            <p className="text-size-small">
+              {artwork_display_data[lang].disclaimer}:
+            </p>
+            <p className="text-muted text-size-small">
+              {artwork_display_data[lang].donate_disclaimer}
+            </p>
+            <p className="text-muted text-size-small">
               {artwork_display_data[lang].order_disclaimer}
-            </span>
+            </p>
           </div>
         </div>
       </div>
