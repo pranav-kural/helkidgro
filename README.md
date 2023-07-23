@@ -32,6 +32,14 @@ The app uses Bootstrap for styling. The custom styles are defined in `src/styles
 
 This project was bootstrapped with `create-react-app`.
 
+## Functionality
+
+### Routing
+
+**Going back using "Go Back" button**
+
+Route is provided to the page or component by using `state` property of the `Link` component. This is then used to go back to the previous page using `state.go_back_link`.
+
 ## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

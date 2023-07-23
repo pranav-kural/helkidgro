@@ -1,6 +1,10 @@
 // Kids info
 const kids_data = {
   en: {
+    title: "Stories of Kids",
+    featured_title: "Featured Kids",
+    subtitle: "Learn more about the kids we support",
+    featured_kids_ids: [0, 1, 2],
     collection: [
       {
         name: "Nidhi",
@@ -41,9 +45,39 @@ const kids_data = {
         ngo_name: "Children First Canada",
         ngo_id: "2",
       },
+      {
+        name: "Aarav",
+        age: "10 years old",
+        country: "Iran",
+        short_desc: "10 years old Aarav from Iran",
+        desc: [
+          "Aarav hails from the underpriviledged part of northern Iran. He is a very bright student and has a keen interest in science whose ability to purse his dreams is limited by his family's financial situation.",
+        ],
+        img: "/assets/image_sample.png",
+        id: "3",
+        ngo_name: "Smile Foundation",
+        ngo_id: "1",
+      },
+      {
+        name: "Sara",
+        age: "8 years old",
+        country: "Syria",
+        short_desc: "8 years old Sara from Syria",
+        desc: [
+          "Sara hails from the underpriviledged part of northern Iran. She is a very bright student and has a keen interest in science whose ability to purse her dreams is limited by her family's financial situation.",
+        ],
+        img: "/assets/image_sample.png",
+        id: "4",
+        ngo_name: "The Children's Inn at NIH",
+        ngo_id: "0",
+      },
     ],
   },
   fr: {
+    title: "Histoires d'enfants",
+    featured_title: "Enfants en vedette",
+    subtitle: "En savoir plus sur les enfants que nous soutenons",
+    featured_kids_ids: [0, 1, 2],
     collection: [
       {
         name: "Nidhi",
@@ -83,6 +117,32 @@ const kids_data = {
         id: "2",
         ngo_name: "Children First Canada",
         ngo_id: "2",
+      },
+      {
+        name: "Aarav",
+        age: "10 ans",
+        country: "Iran",
+        short_desc: "Aarav, 10 ans, de l'Iran",
+        desc: [
+          "Aarav vient de la partie défavorisée du nord de l'Iran. C'est un élève très brillant et il s'intéresse beaucoup à la science dont la capacité à poursuivre ses rêves est limitée par la situation financière de sa famille.",
+        ],
+        img: "/assets/image_sample.png",
+        id: "3",
+        ngo_name: "Smile Foundation",
+        ngo_id: "1",
+      },
+      {
+        name: "Sara",
+        age: "8 ans",
+        country: "Syria",
+        short_desc: "Sara, 8 ans, de l'Syria",
+        desc: [
+          "Sara vient de la partie défavorisée du nord de l'Iran. C'est une élève très brillante et elle s'intéresse beaucoup à la science dont la capacité à poursuivre ses rêves est limitée par la situation financière de sa famille.",
+        ],
+        img: "/assets/image_sample.png",
+        id: "4",
+        ngo_name: "The Children's Inn at NIH",
+        ngo_id: "0",
       },
     ],
   },

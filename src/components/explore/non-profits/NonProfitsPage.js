@@ -1,6 +1,6 @@
 import non_profits_data from "../../../resources/non_profits_data";
 import SleekPageHeader from "../../utility/SleekPageHeader";
-import NonProfitCards from "./NonProfitCards";
+import NonProfitCards from "../../non-profits/NonProfitCards";
 
 export default function NonProfitsPage({ lang }) {
   return (
@@ -9,7 +9,12 @@ export default function NonProfitsPage({ lang }) {
         title={non_profits_data[lang].title}
         subtitle={non_profits_data[lang].subtitle}
       />
-      <NonProfitCards non_profits_data={non_profits_data[lang].collection} />
+      <NonProfitCards
+        non_profits_data={non_profits_data[lang].collection}
+        featured_non_profits_ids={
+          non_profits_data[lang].featured_non_profits_ids
+        }
+      />
     </div>
   );
 }

@@ -4,6 +4,7 @@ const artwork_data = {
     title: "Featured Artwork",
     subtitle:
       "Artwork that inspires, created by exceptional kids in the most adverse situations",
+    featured_artwork_ids: [0, 1, 2],
     collection: [
       {
         artwork_heading: "Untethered Bond",
@@ -60,6 +61,7 @@ const artwork_data = {
     title: "Œuvres d'art en vedette",
     subtitle:
       "Œuvres d'art inspirantes, créées par des enfants exceptionnels dans les situations les plus difficiles",
+    featured_artwork_ids: [0, 1, 2],
     collection: [
       {
         artwork_heading: "Lien indéfectible",

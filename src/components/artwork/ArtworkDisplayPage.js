@@ -44,6 +44,9 @@ export default function ArtworkDisplayPage({ artwork_id_prop, lang }) {
               By
               <Link
                 to={`/explore/stories-of-kids/kid/${artist.id}`}
+                state={{
+                  go_back_link: `/explore/artwork/art/${artwork.artwork_art_id}`,
+                }}
                 className="artist-link ps-1"
                 langu="lol"
               >

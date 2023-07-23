@@ -3,6 +3,7 @@ const non_profits_data = {
   en: {
     title: "Non-Profits",
     subtitle: "Learn more about the non-profits we support",
+    featured_non_profits_ids: [0, 1, 2],
     collection: [
       {
         name: "The Children's Inn at NIH",
@@ -53,6 +54,7 @@ const non_profits_data = {
     title: "Organisations à but non lucratif",
     subtitle:
       "En savoir plus sur les organisations à but non lucratif que nous soutenons.",
+    featured_non_profits_ids: [0, 1, 2],
     collection: [
       {
         name: "The Children's Inn at NIH",

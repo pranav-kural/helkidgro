@@ -15,6 +15,12 @@ export default function SOKidDisplayPage({ kid_id_prop, lang }) {
 
   const kid = getKidObject(kid_id);
 
+  // back link
+  const go_back_link =
+    location.state && location.state.go_back_link
+      ? location.state.go_back_link
+      : "/explore/stories-of-kids";
+
   return (
     <div className="container my-4">
       <div className="row">
@@ -51,6 +57,13 @@ export default function SOKidDisplayPage({ kid_id_prop, lang }) {
                 Explore artwork by {kid.name}
               </Link>
             </p>
+            <Link
+              to={go_back_link}
+              variant="primary"
+              className="btn text-color-white bg-color-primary bg-color-primary-on-hover mt-5"
+            >
+              {display_page_data[lang].go_back}
+            </Link>
           </div>
         </div>
       </div>
