@@ -8,7 +8,7 @@ export default function NonProfitCards({ non_profits_data }) {
     for (let i = 0; i < non_profits_data.length; i++) {
       data[i] = {
         title: non_profits_data[i].name,
-        description: non_profits_data[i].description,
+        description: non_profits_data[i].short_desc,
         secondary_text:
           non_profits_data[i].donations_received_title +
           " " +
@@ -24,6 +24,7 @@ export default function NonProfitCards({ non_profits_data }) {
         card_footer_styles: "bg-color-white text-center mt-4",
         card_more_info_link_styles:
           "info-card-footer-link text-decoration-underline",
+        card_link: "/explore/non-profits/non-profit/" + non_profits_data[i].id,
       };
     }
     return data;

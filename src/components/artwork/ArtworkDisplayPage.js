@@ -42,7 +42,11 @@ export default function ArtworkDisplayPage({ artwork_id_prop, lang }) {
             <h1 id="home-art-is-the-way-slogan">{artwork.artwork_heading}</h1>
             <p className="home-landing-description">
               By
-              <Link to={`/kid/${artist.id}`} className="artist-link ps-1">
+              <Link
+                to={`/explore/stories-of-kids/kid/${artist.id}`}
+                className="artist-link ps-1"
+                langu="lol"
+              >
                 {artist.name}
               </Link>
               , {artist.age}, from {artist.country}

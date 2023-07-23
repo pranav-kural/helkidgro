@@ -1,12 +1,8 @@
-import { useContext } from "react";
-import { LanguageContext } from "../app/LanguageContext";
 import HomeItWorks from "../components/home/HowItWorks";
-import "../styles/home.css";
 import HomeLanding from "../components/home/HomeLanding";
+import "../styles/home.css";
 
-function HomePage() {
-  const lang = useContext(LanguageContext);
-
+function HomePage({ lang }) {
   return (
     <>
       <HomeLanding lang={lang} />

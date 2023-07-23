@@ -1,8 +1,5 @@
-import { useContext } from "react";
-import { LanguageContext } from "../app/LanguageContext";
 import ContactPage from "../components/ContactPage";
 
-export default function Contact() {
-  const lang = useContext(LanguageContext);
+export default function Contact({ lang }) {
   return <ContactPage lang={lang} />;
 }

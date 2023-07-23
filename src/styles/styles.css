@@ -81,6 +81,10 @@ code {
   text-decoration: underline;
 }
 
+.text-bold-on-hover:hover {
+  font-weight: bold;
+}
+
 .text-cursor-pointer-on-hover:hover {
   cursor: pointer;
 }

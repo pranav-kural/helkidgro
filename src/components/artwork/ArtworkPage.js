@@ -1,7 +1,12 @@
+import { useLocation } from "react-router-dom";
 import artwork_data from "../../resources/artwork_data";
 import ArtworkCards from "./ArtworkCards";
 
 export default function ArtworkPage({ lang }) {
+  const { state } = useLocation();
+  const { artist_id } = state || {};
+  console.log("artist_id", artist_id);
+
   return (
     <div className="container my-5">
       <div className="d-flex flex-column justify-content-center align-items-center mb-5">

@@ -1,10 +1,6 @@
-import { useContext } from "react";
-import { LanguageContext } from "../app/LanguageContext";
 import AboutPage from "../components/AboutPage";
 
-function About() {
-  const lang = useContext(LanguageContext);
-
+function About({ lang }) {
   return <AboutPage lang={lang} />;
 }
 

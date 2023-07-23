@@ -9,7 +9,7 @@ export default function ArtworkCards({ artwork_data }) {
     for (let i = 0; i < artwork_data.length; i++) {
       data[i] = {
         title: artwork_data[i].artwork_heading,
-        description: artwork_data[i].artwork_desc,
+        description: artwork_data[i].artwork_subtitle,
         secondary_text: artwork_data[i].artwork_artist,
         image_src: artwork_data[i].artwork_image,
         image_alt: artwork_data[i].artwork_heading,

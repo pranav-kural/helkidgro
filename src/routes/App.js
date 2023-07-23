@@ -1,14 +1,10 @@
-import Navigation from "./components/Navigation";
-import Footer from "./components/Footer";
-import { LanguageContext } from "./app/LanguageContext";
-import { useState } from "react";
+import Navigation from "../components/Navigation";
+import Footer from "../components/Footer";
+import { LanguageContext } from "../app/LanguageContext";
 import { Outlet } from "react-router-dom";
-import { CurrentPageContextProvider } from "./app/CurrentPageContext";
+import { CurrentPageContextProvider } from "../app/CurrentPageContext";
 
-function App() {
-  const [lang, setLang] = useState("en");
-  const [currentPage, setCurrentPage] = useState("home");
-
+function App({ lang, setLang, currentPage, setCurrentPage }) {
   return (
     <CurrentPageContextProvider value={currentPage}>
       <LanguageContext.Provider value={lang}>
