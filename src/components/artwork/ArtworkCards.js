@@ -44,6 +44,7 @@ export default function ArtworkCards({
       card_image_styles: "info-card-image mb-3",
       card_title_styles: "text-style-aclonica text-color-primary",
       card_description_styles: "py-3",
+      card_secondary_text_styles: "text-muted mb-3",
       card_footer_styles: "bg-color-white text-center",
       card_more_info_link_styles:
         "info-card-footer-link text-decoration-underline",

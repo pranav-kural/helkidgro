@@ -1,0 +1,10 @@
+
+
+graffiti: https://unsplash.com/photos/WKQt_X-SKFI
+mountain_art: https://unsplash.com/photos/wKlHsooRVbg
+birds: https://unsplash.com/photos/_f9cP4_unmg
+abstract_2: https://unsplash.com/photos/hnsW_b2SEhY
+car: https://openart.ai/discovery/sd-1007104034441797682
+robo: https://openart.ai/discovery/generation-CKM0LCG3wONwy305IYEzPrAq
+oil_painting: https://openart.ai/discovery/generation-kBL6hZKSEaEMZgLpPkWej48G
+abstract_1: https://openart.ai/discovery/sd-1008065181768761384

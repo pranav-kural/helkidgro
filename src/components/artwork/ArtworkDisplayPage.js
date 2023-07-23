@@ -30,7 +30,7 @@ export default function ArtworkDisplayPage({ artwork_id_prop, lang }) {
   return (
     <div className="container my-4">
       <div className="row">
-        <div className="col d-flex justify-content-center align-items-center">
+        <div className="col d-flex justify-content-center align-items-start mt-5">
           <img
             src={artwork.artwork_image}
             alt={artwork.artwork_desc}
