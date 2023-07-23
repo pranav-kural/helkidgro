@@ -7,7 +7,7 @@ const non_profits_data = {
     collection: [
       {
         name: "The Children's Inn at NIH",
-        image: "/assets/image_sample.png",
+        image: "/assets/images/non-profits/tcin.jpeg",
         short_desc:
           "The Children’s Inn at NIH is a residential “place like home” for sick children and their families. ",
         desc: [
@@ -20,7 +20,7 @@ const non_profits_data = {
       },
       {
         name: "Smile Foundation",
-        image: "/assets/image_sample.png",
+        image: "/assets/images/non-profits/smilengo.jpeg",
         short_desc:
           "Smile Foundation is a non-profit organization based in India that provides education and healthcare for underprivileged children.",
         desc: [
@@ -35,7 +35,7 @@ const non_profits_data = {
       },
       {
         name: "Children First Canada",
-        image: "/assets/image_sample.png",
+        image: "/assets/images/non-profits/children-first.png",
         short_desc:
           "Children First Canada is a non-profit organization based in Canada that advocates for children's rights.",
         desc: [
@@ -58,7 +58,7 @@ const non_profits_data = {
     collection: [
       {
         name: "The Children's Inn at NIH",
-        image: "/assets/image_sample.png",
+        image: "/assets/images/non-profits/tcin.jpeg",
         short_desc:
           "The Children’s Inn at NIH est un lieu d'habitation comme à la maison pour les enfants malades et leurs familles.",
         desc: [
@@ -71,7 +71,7 @@ const non_profits_data = {
       },
       {
         name: "Smile Foundation",
-        image: "/assets/image_sample.png",
+        image: "/assets/images/non-profits/smilengo.jpeg",
         short_desc:
           "Smile Foundation est une organisation à but non lucratif basée en Inde qui fournit une éducation et des soins de santé aux enfants défavorisés.",
         desc: [
@@ -85,7 +85,7 @@ const non_profits_data = {
       },
       {
         name: "Children First Canada",
-        image: "/assets/image_sample.png",
+        image: "/assets/images/non-profit/children-first.png",
         short_desc:
           "Children First Canada est une organisation à but non lucratif basée au Canada qui défend les droits des enfants.",
         desc: [

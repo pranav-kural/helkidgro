@@ -53,7 +53,7 @@ const kids_data = {
         desc: [
           "Aarav hails from the underpriviledged part of northern Iran. He is a very bright student and has a keen interest in science whose ability to purse his dreams is limited by his family's financial situation.",
         ],
-        img: "/assets/image_sample.png",
+        img: "/assets/images/kids/aarav.jpg",
         id: "3",
         ngo_name: "Smile Foundation",
         ngo_id: "1",
@@ -66,7 +66,7 @@ const kids_data = {
         desc: [
           "Sara hails from the underpriviledged part of northern Iran. She is a very bright student and has a keen interest in science whose ability to purse her dreams is limited by her family's financial situation.",
         ],
-        img: "/assets/image_sample.png",
+        img: "/assets/images/kids/sara.jpg",
         id: "4",
         ngo_name: "The Children's Inn at NIH",
         ngo_id: "0",
@@ -126,7 +126,7 @@ const kids_data = {
         desc: [
           "Aarav vient de la partie défavorisée du nord de l'Iran. C'est un élève très brillant et il s'intéresse beaucoup à la science dont la capacité à poursuivre ses rêves est limitée par la situation financière de sa famille.",
         ],
-        img: "/assets/image_sample.png",
+        img: "/assets/images/kids/aarav.jpg",
         id: "3",
         ngo_name: "Smile Foundation",
         ngo_id: "1",
@@ -139,7 +139,7 @@ const kids_data = {
         desc: [
           "Sara vient de la partie défavorisée du nord de l'Iran. C'est une élève très brillante et elle s'intéresse beaucoup à la science dont la capacité à poursuivre ses rêves est limitée par la situation financière de sa famille.",
         ],
-        img: "/assets/image_sample.png",
+        img: "/assets/images/kids/sara.jpg",
         id: "4",
         ngo_name: "The Children's Inn at NIH",
         ngo_id: "0",
