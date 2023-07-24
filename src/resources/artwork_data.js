@@ -1,7 +1,7 @@
 // Data for Artwork component
 const artwork_data = {
   en: {
-    title: "Featured Artwork",
+    title: "Explore Artwork",
     subtitle:
       "Artwork that inspires, created by exceptional kids in the most adverse situations",
     featured_artwork_ids: [0, 1, 2],
@@ -19,6 +19,7 @@ const artwork_data = {
         artwork_artist_id: "0",
         artwork_art_id: "0",
         ngo_id: "1",
+        category: "Drawing",
       },
       {
         artwork_heading: "Colors of Life",
@@ -34,6 +35,7 @@ const artwork_data = {
         artwork_artist_id: "1",
         artwork_art_id: "1",
         ngo_id: "0",
+        category: "Painting",
       },
       {
         artwork_heading: "Hands of Love",
@@ -49,6 +51,7 @@ const artwork_data = {
         artwork_artist_id: "2",
         artwork_art_id: "2",
         ngo_id: "2",
+        category: "Painting",
       },
       {
         artwork_heading: "Blues of the Sky",
@@ -63,6 +66,7 @@ const artwork_data = {
         artwork_artist_id: "3",
         artwork_art_id: "3",
         ngo_id: "1",
+        category: "Abstract",
       },
       {
         artwork_heading: "Silence of the Mountains",
@@ -77,6 +81,7 @@ const artwork_data = {
         artwork_artist_id: "4",
         artwork_art_id: "4",
         ngo_id: "0",
+        category: "Contemporary",
       },
       {
         artwork_heading: "Monster Graffiti",
@@ -91,6 +96,7 @@ const artwork_data = {
         artwork_artist_id: "1",
         artwork_art_id: "5",
         ngo_id: "0",
+        category: "Other",
       },
       {
         artwork_heading: "Cloud of Thoughts",
@@ -104,6 +110,7 @@ const artwork_data = {
         artwork_artist_id: "2",
         artwork_art_id: "6",
         ngo_id: "2",
+        category: "Painting",
       },
       {
         artwork_heading: "Togetherness",
@@ -118,6 +125,7 @@ const artwork_data = {
         artwork_artist_id: "0",
         artwork_art_id: "7",
         ngo_id: "1",
+        category: "Contemporary",
       },
       {
         artwork_heading: "Automobiles of the Past",
@@ -132,6 +140,7 @@ const artwork_data = {
         artwork_artist_id: "1",
         artwork_art_id: "8",
         ngo_id: "0",
+        category: "Contemporary",
       },
       {
         artwork_heading: "Flowers of Warmth",
@@ -146,6 +155,7 @@ const artwork_data = {
         artwork_artist_id: "4",
         artwork_art_id: "9",
         ngo_id: "0",
+        category: "Drawing",
       },
       {
         artwork_heading: "The Smarter Robot",
@@ -160,6 +170,7 @@ const artwork_data = {
         artwork_artist_id: "3",
         artwork_art_id: "10",
         ngo_id: "1",
+        category: "Other",
       },
       {
         artwork_heading: "A Different World",
@@ -174,6 +185,7 @@ const artwork_data = {
         artwork_artist_id: "2",
         artwork_art_id: "11",
         ngo_id: "2",
+        category: "Abstract",
       },
     ],
     category_selection_heading: "Select a category",
@@ -186,7 +198,7 @@ const artwork_data = {
   },
   // above in french
   fr: {
-    title: "Œuvres d'art en vedette",
+    title: "Explorer les œuvres d'art",
     subtitle:
       "Œuvres d'art inspirantes, créées par des enfants exceptionnels dans les situations les plus difficiles",
     featured_artwork_ids: [0, 1, 2],
@@ -204,6 +216,7 @@ const artwork_data = {
         artwork_artist_id: "0",
         artwork_art_id: "0",
         ngo_id: "1",
+        category: "Drawing",
       },
       {
         artwork_heading: "Couleurs de la vie",
@@ -219,6 +232,7 @@ const artwork_data = {
         artwork_artist_id: "1",
         artwork_art_id: "1",
         ngo_id: "0",
+        category: "Painting",
       },
       {
         artwork_heading: "Mains d'amour",
@@ -234,6 +248,7 @@ const artwork_data = {
         artwork_artist_id: "2",
         artwork_art_id: "2",
         ngo_id: "2",
+        category: "Painting",
       },
       {
         artwork_heading: "Blues du ciel",
@@ -248,6 +263,7 @@ const artwork_data = {
         artwork_artist_id: "3",
         artwork_art_id: "3",
         ngo_id: "1",
+        category: "Abstract",
       },
       {
         artwork_heading: "Silence des montagnes",
@@ -262,6 +278,7 @@ const artwork_data = {
         artwork_artist_id: "4",
         artwork_art_id: "4",
         ngo_id: "0",
+        category: "Contemporary",
       },
       {
         artwork_heading: "Graffiti de monstres",
@@ -276,6 +293,7 @@ const artwork_data = {
         artwork_artist_id: "1",
         artwork_art_id: "5",
         ngo_id: "0",
+        category: "Other",
       },
       {
         artwork_heading: "Nuage de pensées",
@@ -289,6 +307,7 @@ const artwork_data = {
         artwork_artist_id: "2",
         artwork_art_id: "6",
         ngo_id: "2",
+        category: "Painting",
       },
       {
         artwork_heading: "Togetherness",
@@ -303,6 +322,7 @@ const artwork_data = {
         artwork_artist_id: "0",
         artwork_art_id: "7",
         ngo_id: "1",
+        category: "Contemporary",
       },
       {
         artwork_heading: "Automobiles du passé",
@@ -317,6 +337,7 @@ const artwork_data = {
         artwork_artist_id: "1",
         artwork_art_id: "8",
         ngo_id: "0",
+        category: "Contemporary",
       },
       {
         artwork_heading: "Fleurs de chaleur",
@@ -332,6 +353,7 @@ const artwork_data = {
         artwork_artist_id: "4",
         artwork_art_id: "9",
         ngo_id: "0",
+        category: "Drawing",
       },
       {
         artwork_heading: "Le robot plus intelligent",
@@ -346,6 +368,7 @@ const artwork_data = {
         artwork_artist_id: "3",
         artwork_art_id: "10",
         ngo_id: "1",
+        category: "Other",
       },
       {
         artwork_heading: "Un monde différent",
@@ -360,6 +383,7 @@ const artwork_data = {
         artwork_artist_id: "2",
         artwork_art_id: "11",
         ngo_id: "2",
+        category: "Abstract",
       },
     ],
     category_selection_heading: "Sélectionnez une catégorie",

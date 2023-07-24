@@ -16,3 +16,20 @@
   font-weight: 800;
   cursor: pointer;
 }
+
+#artwork-filter-container {
+  width: fit-content;
+  margin-right: 1em;
+}
+
+#artwork-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70vw;
+}
+
+.artwork-card-container {
+  display: inline-block;
+  min-width: 20vw;
+  margin-bottom: 2em;
+}

@@ -50,7 +50,7 @@ export default function SOKidDisplayPage({ kid_id_prop, lang }) {
               <Link
                 to="/explore/artwork"
                 state={{
-                  artist_id: kid.id,
+                  state_artist_name: kid.name,
                 }}
                 className="text-color-primary home-link text-bold-on-hover"
               >

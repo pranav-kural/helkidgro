@@ -3,7 +3,10 @@ import { Link } from "react-router-dom";
 
 export default function InfoCard({ data }) {
   return (
-    <Link to={data.card_link} className="col card-wrapper-link">
+    <Link
+      to={data.card_link}
+      className={`col card-wrapper-link ${data.card_container_styles}`}
+    >
       <Card className={data.card_styles}>
         <Card.Img
           variant="top"

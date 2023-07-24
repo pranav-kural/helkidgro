@@ -1,7 +1,6 @@
-import { Row } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import InfoCard from "../utility/InfoCard";
 import "../../styles/info-card-primary.css";
-import "../../styles/artwork.css";
 
 export default function ArtworkCards({
   artwork_data,
@@ -40,6 +39,7 @@ export default function ArtworkCards({
       more_info_text: artwork_data[i].artwork_more_from_artist,
       more_info_link:
         "/explore/artwork/artist/" + artwork_data[i].artwork_artist_id,
+      card_container_styles: "artwork-card-container",
       card_styles: "h-100 text-center info-card",
       card_image_styles: "info-card-image mb-3",
       card_title_styles: "text-style-aclonica text-color-primary",
@@ -53,11 +53,20 @@ export default function ArtworkCards({
   }
 
   return (
-    <Row xs={1} md={3} className="g-4">
+    <Container id="artwork-cards-container">
       {/* For each element of array received from getData */}
-      {Object.values(getData()).map((data, index) => (
-        <InfoCard key={index} data={data} />
-      ))}
-    </Row>
+      {
+        // if data is null, then display message saying no artwork found
+        artwork_data.length === 0 ? (
+          <Row className="text-center w-100 mt-5 fs-4">
+            <p>Oops! No artwork found for selected criteria :(</p>
+          </Row>
+        ) : (
+          Object.values(getData()).map((data, index) => (
+            <InfoCard key={index} data={data} />
+          ))
+        )
+      }
+    </Container>
   );
 }
